@@ -1,0 +1,199 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:USB_B_Micro J?
+U 1 1 5D87D90A
+P 2400 4200
+F 0 "J?" H 2457 4667 50  0000 C CNN
+F 1 "USB_B_Micro" H 2457 4576 50  0000 C CNN
+F 2 "" H 2550 4150 50  0001 C CNN
+F 3 "~" H 2550 4150 50  0001 C CNN
+	1    2400 4200
+	1    0    0    -1  
+$EndComp
+$Sheet
+S 6950 2150 1700 1150
+U 5D883E85
+F0 "ESP-Notched" 50
+F1 "ESP-Notched.sch" 50
+$EndSheet
+$Sheet
+S 6950 4700 1700 1150
+U 5D88405A
+F0 "ESP-01" 50
+F1 "ESP-01.sch" 50
+$EndSheet
+Wire Wire Line
+	2300 4600 2300 4650
+Wire Wire Line
+	2300 4650 2400 4650
+Wire Wire Line
+	2400 4650 2400 4600
+Wire Wire Line
+	2400 4650 2400 4700
+Connection ~ 2400 4650
+$Comp
+L power:GND #PWR?
+U 1 1 5D88D0D1
+P 2400 4700
+F 0 "#PWR?" H 2400 4450 50  0001 C CNN
+F 1 "GND" H 2405 4527 50  0000 C CNN
+F 2 "" H 2400 4700 50  0001 C CNN
+F 3 "" H 2400 4700 50  0001 C CNN
+	1    2400 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Jack-DC J?
+U 1 1 5D88E58B
+P 2400 3350
+F 0 "J?" H 2457 3675 50  0000 C CNN
+F 1 "Jack-DC" H 2457 3584 50  0000 C CNN
+F 2 "" H 2450 3310 50  0001 C CNN
+F 3 "~" H 2450 3310 50  0001 C CNN
+	1    2400 3350
+	1    0    0    -1  
+$EndComp
+$Sheet
+S 3700 3100 1350 1800
+U 5D883BE8
+F0 "UART and PSU" 50
+F1 "UART and PSU.sch" 50
+F2 "D+" B L 3700 4200 50 
+F3 "D-" B L 3700 4300 50 
+F4 "VBUS" U L 3700 4000 50 
+F5 "GND" U L 3700 4600 50 
+F6 "TXD-A" O R 5050 3200 50 
+F7 "RXD-A" I R 5050 3300 50 
+F8 "RTS-A" O R 5050 3400 50 
+F9 "DTR-A" O R 5050 3500 50 
+F10 "RXLED-A" U R 5050 3600 50 
+F11 "TXLED-A" U R 5050 3700 50 
+F12 "TXD-B" O R 5050 4300 50 
+F13 "RXD-B" I R 5050 4400 50 
+F14 "RTS-B" O R 5050 4500 50 
+F15 "DTR-B" O R 5050 4600 50 
+F16 "RXLED-B" U R 5050 4700 50 
+F17 "TXLED-B" U R 5050 4800 50 
+F18 "VIN" U L 3700 3400 50 
+$EndSheet
+Wire Wire Line
+	3700 4600 2400 4600
+Connection ~ 2400 4600
+Wire Wire Line
+	3700 4300 2700 4300
+Wire Wire Line
+	3700 4200 2700 4200
+NoConn ~ 2700 4400
+Entry Wire Line
+	5100 4800 5200 4900
+Entry Wire Line
+	5100 4700 5200 4800
+Entry Wire Line
+	5100 4600 5200 4700
+Entry Wire Line
+	5100 4500 5200 4600
+Entry Wire Line
+	5100 4400 5200 4500
+Entry Wire Line
+	5100 4300 5200 4400
+Entry Wire Line
+	5100 3200 5200 3100
+Entry Wire Line
+	5100 3300 5200 3200
+Entry Wire Line
+	5100 3400 5200 3300
+Entry Wire Line
+	5100 3500 5200 3400
+Entry Wire Line
+	5100 3600 5200 3500
+Entry Wire Line
+	5100 3700 5200 3600
+Wire Wire Line
+	5050 3200 5100 3200
+Wire Wire Line
+	5050 3300 5100 3300
+Wire Wire Line
+	5050 3400 5100 3400
+Wire Wire Line
+	5050 3500 5100 3500
+Wire Wire Line
+	5050 3600 5100 3600
+Wire Wire Line
+	5050 3700 5100 3700
+Wire Wire Line
+	5050 4300 5100 4300
+Wire Wire Line
+	5050 4400 5100 4400
+Wire Wire Line
+	5050 4500 5100 4500
+Wire Wire Line
+	5050 4600 5100 4600
+Wire Wire Line
+	5050 4700 5100 4700
+Wire Wire Line
+	5050 4800 5100 4800
+Wire Wire Line
+	2700 3250 3000 3250
+$Comp
+L power:VBUS #PWR?
+U 1 1 5D88D6EC
+P 2800 3950
+F 0 "#PWR?" H 2800 3800 50  0001 C CNN
+F 1 "VBUS" H 2815 4123 50  0000 C CNN
+F 2 "" H 2800 3950 50  0001 C CNN
+F 3 "" H 2800 3950 50  0001 C CNN
+	1    2800 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D8AF585
+P 2850 3500
+F 0 "#PWR?" H 2850 3250 50  0001 C CNN
+F 1 "GND" H 2855 3327 50  0000 C CNN
+F 2 "" H 2850 3500 50  0001 C CNN
+F 3 "" H 2850 3500 50  0001 C CNN
+	1    2850 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2700 4000 2800 4000
+Wire Wire Line
+	2800 3950 2800 4000
+Connection ~ 2800 4000
+Wire Wire Line
+	2800 4000 3700 4000
+Wire Wire Line
+	2850 3450 2850 3500
+Wire Wire Line
+	2700 3450 2850 3450
+Wire Wire Line
+	3000 3400 3000 3250
+Wire Wire Line
+	3000 3400 3700 3400
+$Comp
+L Power_Protection:USB6B1 U?
+U 1 1 5D8B2CB7
+P 3200 4250
+F 0 "U?" H 3200 4731 50  0000 C CNN
+F 1 "USB6B1" H 3200 4640 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 3200 4250 50  0001 C CNN
+F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/3e/ec/b2/54/b2/76/47/90/CD00001361.pdf/files/CD00001361.pdf/jcr:content/translations/en.CD00001361.pdf" H 2250 4150 50  0001 C CNN
+	1    3200 4250
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
